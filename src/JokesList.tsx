@@ -1,4 +1,4 @@
-import { ReactNode, useCallback, useMemo, useState, VFC } from 'react';
+import { memo, ReactNode, useCallback, useMemo, useState, VFC } from 'react';
 import { useQuery } from 'react-query';
 import './App.css';
 
@@ -19,7 +19,7 @@ interface JokesResponseJSON {
   total_pages: number;
 }
 
-const Wrapper: VFC<{ children: ReactNode; footer: ReactNode }> = ({ children, footer }) => {
+const Wrapper: VFC<{ children: ReactNode; footer: ReactNode }> = memo(({ children, footer }) => {
   return (
     <div className="width-100p max-height-100vh min-height-100vh flex flex-column align-items-center justifi-content-center text-medium background-accent-dark color-white overflow-y-hidden">
       <header className="width-100p flex justify-content-center border-style-solid border-width-0 border-bottom-width-2 border-color-white">
@@ -33,7 +33,8 @@ const Wrapper: VFC<{ children: ReactNode; footer: ReactNode }> = ({ children, fo
       {footer}
     </div>
   );
-};
+});
+Wrapper.displayName = 'Wrapper';
 
 export const JokesList: VFC = () => {
   const [page, setPage] = useState(1);
