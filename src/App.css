@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.width-100p {
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.max-width-1200px {
+  max-width: 1200px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+.align-items-center {
   align-items: center;
+}
+.justify-content-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.text-medium {
+  font-size: 24px;
+}
+.txt-bold {
+  font-weight: bold;
+}
+.txt-underline {
+  text-decoration: underline;
+}
+.background-accent-dark {
+  background-color: #282c34;
+}
+.color-white {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.min-height-100vh {
+  min-height: 100vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.max-height-100vh {
+  max-height: 100vh;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+.rows\>m16 > :not(:last-child) {
+  margin-bottom: 16px;
+}
+.cols\>m16 > :not(:last-child) {
+  margin-right: 16px;
+}
+.padding-y-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.border-style-solid {
+  border-style: solid;
+}
+.border-width-0 {
+  border-width: 0;
+}
+.border-top-width-2 {
+  border-top-width: 2px;
+}
+.border-bottom-width-2 {
+  border-bottom-width: 2px;
+}
+.border-color-white {
+  border-color: white;
 }
